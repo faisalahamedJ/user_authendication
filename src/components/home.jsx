@@ -29,8 +29,9 @@ class Home extends Component {
         window.localStorage.removeItem("remember");
        this.props.history.push("/");
     }
-    changeNight =() =>{
-        if(this.state.mode){
+    changeNight =(value) =>{
+        
+        if(value){
             document.querySelector(".homeContainer").classList.add("darkContainer")
         }
         else{
@@ -41,9 +42,11 @@ class Home extends Component {
 
 
     handeChange = e =>{
-        this.setState({mode : this.state.mode = e.target.checked});
-        window.localStorage.setItem("darkmode", this.state.mode)
-        this.changeNight();
+        let mode = {...this.state};
+            mode = e.target.checked;            
+        this.setState({mode});
+        window.localStorage.setItem("darkmode", e.target.checked)
+        this.changeNight(mode);
     }
 
     render() { 
