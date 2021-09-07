@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.loginContainer, .signupContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 4rem;
+    text-align: left;
+}
+
+.loginContainer >h1, .signupContainer >h1{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 2rem;
+    
+}
+.loginContainer > p , .signupContainer >p{
+    width: 75%;
+    margin: 0 auto;
+    color: rgb(179, 179, 179);
+    padding: .5rem 1.5rem;
+}
+
+ form {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 2;
+}
+label {
+    font-weight: bold;
+}
+#email, #password, #username{
+    padding: .7rem;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 30px;
+}
+
+.anchor{
+    font-weight: bold;
+    text-decoration: none;
+    color: #5138EE;
+    cursor: pointer;
+}
+
+.loginBtn{
+    width: 100%;
+    padding: .7rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #5138EE;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.checkboxforgetContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+
+#rememberme{
+    cursor: pointer;
+    
+}
+
+.linktoSignup{
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+
+
+
+.imageContainer{
+    width: 50%;
+    height: 100%;
+}
+
+.imageContainer >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.homeContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: #1D2935;
+    color: #fff;
+}
+
+.premisesContainer{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+    
+}
+.premisesContainer > h1{
+    font-size: 5rem;
+}
+
+.logoutBtn{
+    position: absolute;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #5138EE ;
+    color: #fff;
+    font-weight: 600;
+    top: 10%;
+    left: 50%;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.homeimage{
+    width: 50%;
+    position: relative;
+}
+
+.homeimage >img{
+    width: 50%;
+    height: 85vh;
+    margin: 2rem auto;    
+    border-radius: 20px;
+ 
+}
+
+.homeIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.icon{
+    color: #fff;
+     font-size: 90px;
+    padding: 0;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content >h1{
+    font-size: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+.toggleBtn{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+
+}
+
+.message, .passwordmsg{
+    color: red;
+}
+
+.darkContainer{
+    background: #161616 !important;
+    color: #fff;
+}
+.inputfield{
+    background: #222222;
+    color: rgb(226, 226, 226);
+    border: none !important;
+}
+
+.darkmodebtn{
+    background: linear-gradient(to right,#CF6B2E,#9B539A);
+}
+
